@@ -1,0 +1,22 @@
+name: VanillaClans
+version: '1.0.0'
+main: com.vanilla.clans.VanillaClans
+api-version: 1.21
+author: Сергей
+
+commands:
+  clan:
+    description: Основная команда управления кланом
+    usage: /clan <create|invite|accept|kick|leave|disband|war|top|info>
+    aliases: [c, clans]
+  cc:
+    description: Отправить сообщение в клан-чат
+    usage: /cc <сообщение>
+
+permissions:
+  vanillaclans.admin:
+    description: Доступ к админ-командам плагина
+    default: op
+  vanillaclans.use:
+    description: Базовый доступ к командам клана
+    default: true
